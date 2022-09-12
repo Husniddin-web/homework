@@ -1,0 +1,97 @@
+.header-hero {
+    padding-top: 100px;
+
+    p {
+        font-family: 'Tinos';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 57px;
+        color: #D67E35;
+        margin: 0;
+        text-indent: 30px;
+    }
+
+    h1 {
+        font-family: 'Tinos';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 80px;
+        line-height: 92px;
+        color: #D67E35;
+        margin: 0;
+    }
+
+    span {
+        display: block;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: #FFFFFF;
+        padding-left: 110px;
+        margin-bottom: 21px;
+
+        &::after {
+            content: url(../../images/line.svg);
+            position: relative;
+            top: -5px;
+        }
+
+        &::before {
+            content: url(../../images/line.svg);
+            position: relative;
+            top: -5px;
+        }
+    }
+
+    a {
+        display: inline-block;
+        background: #D67E35;
+        padding: 12px 27px;
+        margin-left: 170px;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 19px;
+        color: #FFFFFF;
+        border: 2px solid #FF7400;
+        transition: all .2s ease;
+
+        &:hover {
+            background: transparent;
+        }
+    }
+}
+
+@media only screen and (max-width:610px) {
+    .header-hero {
+        text-align: center;
+
+        p {
+            font-size: 30px;
+            line-height: 34px;
+        }
+
+        h1 {
+            font-size: 40px;
+            line-height: 46px;
+        }
+        span{
+            font-size: 15px;
+            line-height: 20px;
+            padding-left: 0;
+            &::after{
+                display: none;
+            }&::before{
+                display: none;
+            }
+        }
+        a{
+            margin-left: 0;
+            padding: 8px 17px;
+        }
+    }
+}

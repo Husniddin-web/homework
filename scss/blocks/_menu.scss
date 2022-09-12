@@ -1,0 +1,124 @@
+.menu-section {
+    height: 1034px;
+    background-image: url(../../images/burger-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h3 {
+        text-align: center;
+        padding-top: 98px;
+        font-family: 'Tinos';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 54px;
+        line-height: 62px;
+        color: #FFFFFF;
+        text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+    }
+}
+
+.menu {
+    margin: auto 0;
+    padding-bottom: 200px;
+    padding-top: 120px;
+    display: flex;
+    gap: 25px;
+
+}
+
+.menu-box {
+    width: 350px;
+    background: #FFFFFF;
+    padding-top: 80px;
+    padding-bottom: 29px;
+    text-align: center;
+    position: relative;
+
+    h2 {
+        font-family: 'Tinos';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 30px;
+        color: #000000;
+    }
+
+    p {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 20px;
+    }
+
+    a {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 19px;
+        color: #FFFFFF;
+        padding: 12px 48px;
+        background: #FF7400;
+        border: 2px solid #FF7400;
+        transition: all .2s ease;
+
+        &:hover {
+            color: #000000;
+            background: transparent;
+        }
+    }
+}
+
+.rec {
+    position: absolute;
+    top: 0;
+    margin: 0;
+    padding: 7px 11px;
+    background: #FF7400;
+
+}
+
+.grade {
+    position: absolute;
+    left: 183px;
+    bottom: 143px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background: #D67E34;
+    border: 7px solid #FFFFFF;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 33px;
+    color: #FFFFFF;
+}
+@media only screen and (max-width:1000px){
+    .menu-section{
+        height: 1340px;
+    }
+    .menu{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width:765px){
+    .menu-section{
+        height: 1034px;
+    }
+    .mobile{
+
+        display: none;
+    }
+    .menu-box{
+        width: 290px;
+    }
+}

@@ -1,0 +1,45 @@
+.chef {
+    display: flex;
+    // gap: 32px;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.chef-title {
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 59px;
+    font-family: 'Tinos';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 62px;
+    color: #000000;
+
+    strong {
+        color: coral;
+    }
+}
+
+@media only screen and (max-width:1125px) {
+    
+
+    .chef {
+        flex-wrap: wrap;
+
+        img {
+            margin-bottom: 20px;
+        }
+    }
+}
+@media only screen and (max-width:750px) {
+    .chef-title {
+        font-size: 40px;
+        line-height: 46px;
+    }
+    .chef{
+        img{
+            width: 288px;
+        }
+    }
+}

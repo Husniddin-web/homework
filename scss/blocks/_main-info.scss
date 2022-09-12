@@ -1,0 +1,128 @@
+.main-info {
+    // display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 0 auto;
+    margin-bottom: 240px;
+}
+
+.main-info__left {
+    width: 444px;
+
+    h3 {
+        font-family: 'Tinos';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 54px;
+        line-height: 62px;
+        color: #000000;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 21px;
+
+        strong {
+            color: #D67E34;
+        }
+    }
+
+    p {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        color: #656363;
+    }
+}
+
+.info__number {
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+    p {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 27px;
+        text-align: center;
+        color: #000000;
+
+        strong {
+            display: block;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 54px;
+            text-align: center;
+            color: #BC9060;
+        }
+    }
+}
+
+.main-info__right {
+    max-width: 212px;
+    height: 164px;
+    background: #FFE8D0;
+    position: relative;
+    margin-right: 50px;
+
+    .img1 {
+        position: absolute;
+        left: -68px;
+        top: -30px;
+    }
+
+    .img2 {
+        position: absolute;
+        top: 200px;
+        left: 78px;
+    }
+
+    .img3 {
+        position: absolute;
+        top: 0px;
+        right: 130px;
+    }
+}
+
+.shadow {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+@media only screen and (max-width:961px) {
+    .main-info{
+        display: flex;
+    }
+    .main-info__right {
+        display: none;
+    }
+
+    .main-info {
+        grid-template-columns: auto auto;
+    }
+
+    .main-info__left {
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width:670px) {
+    .main-info__left {
+        width: 290px;
+
+        h3 {
+            font-size: 40px;
+            line-height: 46px;
+            text-align: center;
+        }
+    }
+    .info__number{
+        grid-template-columns: auto;
+        align-items: center;
+        justify-items: center;
+    }
+}
